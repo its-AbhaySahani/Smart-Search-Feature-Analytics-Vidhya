@@ -1,0 +1,29 @@
+We'd like you to showcase your skills by creating a smart search feature for all free
+courses on Analytics Vidhya’s platform: Analytics Vidhya Free Courses(https://courses.analyticsvidhya.com/collections/courses).
+Your task is to build a Smart Search tool that easily helps users find the most relevant
+free courses.
+
+Here’s what you need to do:
+1. Browse through the free courses on the platform: Explore and collect data (e.g.,
+course titles, descriptions, curriculum) from the free courses available on Analytics
+Vidhya platform.
+
+2. Develop a smart search system: Build a search tool that quickly finds and suggests
+the most relevant courses using keywords and natural language queries. You should
+use Generative AI methods/tools like vector embeddings for querying and an LLM to get
+the results.
+
+3. Deploy the tool on Huggingface Spaces: Once your search tool is ready, deploy it on
+Huggingface Spaces. You can use any framework (such as Gradio, Streamlit, or others)
+as long as it is publicly accessible via Huggingface Spaces.
+
+4. Share the link for review: Provide us with the public link to your deployed smart
+search tool for evaluation.
+
+5. Share your approach: Share with us a document (e.g. docx, pdf, etc.) that explains
+how you have approached the problem, and the methodology behind the embedding
+model and LLM selection.
+
+The more advanced and effective your search tool is, the better your chances of
+standing out.
+We’re excited to see what you create!
