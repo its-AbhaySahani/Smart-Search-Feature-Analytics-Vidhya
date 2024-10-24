@@ -1,3 +1,77 @@
 # Smart-Search-Feature-Analytics-Vidhya
 
-'https://courses.analyticsvidhya.com/courses/linear-programming', 'https://courses.analyticsvidhya.com/courses/a-comprehensive-learning-path-for-deep-learning-in-2023', 'https://courses.analyticsvidhya.com/courses/ai-ethics-fractal', 'https://courses.analyticsvidhya.com/courses/loan-prediction-practice-problem-using-python', 'https://courses.analyticsvidhya.com/courses/introduction-to-generative-ai', 'https://courses.analyticsvidhya.com/courses/K-Nearest-Neighbors-KNN-Algorithm', 'https://courses.analyticsvidhya.com/bundles/introductory-data-science-for-business-managers', 'https://courses.analyticsvidhya.com/courses/Fundamentals-of-Regression-Analysis', 'https://courses.analyticsvidhya.com/courses/writing-powerful-data-science-articles', 'https://courses.analyticsvidhya.com/courses/learn-swift-for-data-science', 'https://courses.analyticsvidhya.com/courses/top-data-science-projects-for-analysts-and-data-scientists', 'https://courses.analyticsvidhya.com/courses/data-science-career-conclave', 'https://courses.analyticsvidhya.com/courses/The%20Working%20of%20Neural%20Networks', 'https://courses.analyticsvidhya.com/courses/ensemble-learning-and-ensemble-learning-techniques', 'https://courses.analyticsvidhya.com/courses/machine-learning-summer-training', 'https://courses.analyticsvidhya.com/courses/get-started-with-scikit-learn-sklearn', 'https://courses.analyticsvidhya.com/courses/hypothesis-testing-for-data-science-and-analytics', 'https://courses.analyticsvidhya.com/courses/building-smarter-llms-with-mamba-and-state-space-model', 'https://courses.analyticsvidhya.com/courses/free-understanding-linear-regression', 'https://courses.analyticsvidhya.com/courses/getting-started-with-decision-trees', 'https://courses.analyticsvidhya.com/courses/evaluation-metrics-for-machine-learning-models', 'https://courses.analyticsvidhya.com/courses/convolutional-neural-networks-cnn-from-scratch', 'https://courses.analyticsvidhya.com/courses/introduction-to-web-scraping', 'https://courses.analyticsvidhya.com/courses/twitter-sentiment-analysis', 'https://courses.analyticsvidhya.com/courses/data-science-hacks-tips-and-tricks', 'https://courses.analyticsvidhya.com/courses/winning-data-science-hackathons-learn-from-elite-data-scientists', 'https://courses.analyticsvidhya.com/courses/a-comprehensive-learning-path-to-become-a-data-engineer-in-2022', 'https://courses.analyticsvidhya.com/courses/pandas-for-data-analysis-in-python', 'https://courses.analyticsvidhya.com/courses/dimensionality-reduction-for-machine-learning', 'https://courses.analyticsvidhya.com/courses/big-mart-sales-prediction-using-r', 'https://courses.analyticsvidhya.com/courses/support-vector-machine-svm-in-python-and-r'}
+
+
+### Live Demo:
+
+**Link to Hugging Face Spaces**: Included the link to the live demo: [SmartSearchEngine-AnalyticsVidhya](https://huggingface.co/spaces/its-abhay777/SmartSearchEngine-AnalyticsVidhya).
+
+This should make it easy for users to access and try out the live demo of your Smart Search Engine.
+## Overview
+
+The Smart Search Feature for Analytics Vidhya is a tool designed to help users find the most relevant free courses on the Analytics Vidhya platform. This project leverages web scraping, natural language processing, and machine learning to provide an efficient and user-friendly search experience.
+
+## Features
+
+- **Web Scraping**: Collects data from the Analytics Vidhya free courses page.
+- **Data Cleaning**: Handles missing values and ensures data consistency.
+- **Vector Embeddings**: Uses Sentence Transformers to generate embeddings for course descriptions.
+- **Search Engine**: Implements a smart search engine using cosine similarity and the Gemmini API for enhanced search results.
+- **User Interface**: Provides a user-friendly interface using Gradio for easy interaction.
+
+
+## Installation
+
+1. **Clone the repository**:
+    ```sh
+    git clone https://github.com/yourusername/Smart-Search-Feature-Analytics-Vidhya.git
+    cd Smart-Search-Feature-Analytics-Vidhya
+    ```
+
+2. **Create a virtual environment**:
+    ```sh
+    python -m venv .venv
+    source .venv/bin/activate  # On Windows use `.venv\Scripts\activate`
+    ```
+
+3. **Install the dependencies**:
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+## Usage
+
+### Data Scraping
+
+1. **Run the scraper**:
+    ```sh
+    python DataScrapping/scrapper.py
+    ```
+
+2. **Handle missing values**:
+    ```sh
+    python DataScrapping/hsndlingMissingValues.py
+    ```
+
+### Generating Vector Embeddings
+
+1. **Generate embeddings**:
+    ```sh
+    python Search\ Engine/VectorEmbedding.py
+    ```
+
+### Deploying the Search Engine
+
+1. **Deploy the search engine**:
+    ```sh
+    python Search\ Engine/deployment.py
+    ```
+
+## Example
+
+To perform a search query, simply enter your query in the Gradio interface and get the most relevant courses displayed.
+
+### Example Search Query
+
+```sh
+data science beginner course
