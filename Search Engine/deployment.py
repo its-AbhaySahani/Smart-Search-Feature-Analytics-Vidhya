@@ -13,18 +13,11 @@ def gradio_search(query):
 # Create a Gradio interface
 iface = gr.Interface(
     fn=gradio_search,
-    inputs=gr.Textbox(lines=2, placeholder="Enter your search query here...", label="Search Query"),
-    outputs=gr.Dataframe(headers=["Course Title", "Description", "Rating", "Link", "Duration", "Level"], label="Search Results"),
+    inputs=gr.Textbox(lines=2, placeholder="Enter your search query here..."),
+    outputs=gr.JSON(label="Search Results"),
     title="Smart Course Search Tool",
-    description="Search for the most relevant courses on Analytics Vidhya",
-    theme="default",
-    layout="vertical",
-    live=True
+    description="Search for the most relevant courses on Analytics Vidhya"
 )
 
-# Add a logo and some styling
-iface.launch(
-    share=True,
-    favicon_path="path/to/logo.png",  # Replace with the path to your logo
-    show_error=True
-)
+# Launch the Gradio interface
+iface.launch(share=True)
