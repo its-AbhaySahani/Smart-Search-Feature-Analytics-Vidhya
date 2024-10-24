@@ -14,3 +14,4 @@ df['Embeddings'] = list(description_embeddings)
 
 # Save the DataFrame with embeddings for later use
 df.to_pickle('output/courses_with_embeddings.pkl')
+print("Embeddings generated and saved successfully!")
